@@ -1,0 +1,153 @@
+LUMA GROUP PROJECT
+In this group project you will be automating https://magento.softwaretestingboard.com/.
+Create a java-maven project and add all the necessary dependencies. Create a page object
+model framework from scratch and implement all the pages. Use Object Oriented Programming
+concepts for common elements and action methods. Use soft asserts for verifications.
+Make your framework data driven by using Apache POI and @DataProvider.
+At the end, create test suites for regresion and smoke test execution.
+
+Test Case 1. (positive, make this data driven)
+1. Navigate to https://magento.softwaretestingboard.com/
+2. Verify the title of the home page
+3. Verify ‘Create an Account’ is displayed
+4. Click on ‘Create an Account’ link
+5. Verify the title of the Register page
+6. Verify the ‘Create New Customer Account’ header
+7. Verify the ‘Personal Information’ header
+8. Enter First Name and Last Name
+9. Check Sign Up for Newsletter checkbox
+10. Verify Sign-in information header
+11. Enter Email address
+12. Enter Password
+13. Enter Confirm Password
+14. Verify Create an Account button is displayed.
+15. Click on Create an Account button.
+16. Verify My Account page title
+17. Verify Account information on this page including:
+   First Name, Last Name, email
+18. Verify Menu Items on the right side:
+   My Account, My Orders, My Downloadable Products, My Wish List, Address Book,
+   Account Information, Stored Payment Methods, My Product Reviews, Newsletter Subscriptions
+19. Click on Address Book link from the right menu
+20. Verify FirstName and Last Name fields are populated
+21. Enter Company Name
+22. Enter Phone Number
+23. Enter Street Address.
+24. Enter City
+25. Select State
+26. Enter Zip
+27. Select Country
+28. Verify Save Address is enabled and click it.
+29. Log out
+30. Verify ‘You are signed out’ header message
+Test Case 2 (positive)
+1. Navigate to https://magento.softwaretestingboard.com/
+2. Verify the title of the home page
+3. Scroll all the way down and verify subscription field is displayed on the bottom of the page
+4. Enter email address
+5. Verify Subsribe button is enabled and click it
+6. Verify ‘Thank you for your subsription’ success message is displayed on top
+Test Case 3 (positive)
+1. Navigate to https://magento.softwaretestingboard.com/
+2. Verify the title of the home page
+3. Verify Sign in link is displayed on top right and click it
+4. Verify Customer Login header
+5. Enter valid email address
+6. Enter valid password
+7. Verify Sign in button is enabled
+8. Verify ‘Forgot Your Password?’ links is displayed
+9. Click Sign in button
+10. Very ‘Welcome, username!’ message on top right
+11. Log out.
+12. Verify ‘You are signed out’ header message
+
+Test Case 4 (negative test cases)
+1. Navigate to https://magento.softwaretestingboard.com/
+2. Verify the title of the home page
+3. Verify Sign in link is displayed on top right and click it
+4. Verify Customer Login header
+5. Enter correct email address
+6. Enter incorrect password
+9. Click Sign in button
+10. Verify The account sign-in was incorrect or your account is disabled temporarily. Please wait and try again later.
+11. Enter an invalid password e.g without @ or .com
+12. Enter an incorrect password
+13. Verify Please enter a valid email address (Ex: johndoe@domain.com).
+14. Clear the email and password fields and click on Sign in button
+14. Verify Required field error messages
+
+Test Case 5 (positive)
+1. Navigate to https://magento.softwaretestingboard.com/
+2. Verify the title of the home page
+3. Verify Sign in link is displayed on top right and click it
+4. Verify Customer Login header
+5. Enter valid email address
+6. Enter valid password
+7. Verify Sign in button is enabled
+8. Verify ‘Forgot Your Password?’ links is displayed
+9. Click Sign in button
+10. Very ‘Welcome, username!’ message on top right
+11. Hover over Men -> Top -> Jackets and click on Jackets
+12. Verify Jackets header on top left
+13a. Sort by Name and verify the the first product is Beaumont Summit Kit. and last is Typhon Performance Fleece-lined Jacket
+13b. Sort by Price and verify that first product is $42.00 and last one is $99.00
+14. Click on the first Product
+15. Verify the Product Name, Price
+16. Choose a size
+17. Pick a color
+18. Enter a quantity
+19. Verify Add to Cart button is enabled and click it.
+20. Verify You added product to your shopping cart tooltip message over the picture
+21. Click on Cart button on top right
+22. Verify there is only one item
+23. Verify Proceed to Checkout button is enabled and click it
+24. Verify you are on the Shipping Page by title
+25. Verify the Shipping check on top
+26. Verify the Shipping Address Header
+27. Fill out the form
+28. Select a shipping method
+29. Verify Next button is enabled and click it
+30. Verify Review & Payment Check is displayed on top
+31. Verify the Payment Method header
+32. Check the My billing checkbox
+33. Verify the order summary
+34. Verify the Place Order button is enabled and click it
+35. Verify the Order has been placed successfully
+36. Verify that there is a link to the order number and click it
+37. Verify the date is correct and current
+38. Verify the status is pending
+39. Verify Items Ordered Table:
+   Product Name, SKU, Price, QTY, Subtotal, COLOR, Size
+40. Navigate to Home Page and Log out.
+Test Case 6 (positive)
+1. Navigate to https://magento.softwaretestingboard.com/
+2. Verify the title of the home page
+3. Verify Sign in link is displayed on top right and click it
+4. Verify Customer Login header
+5. Enter valid email address
+6. Enter valid password
+7. Verify Sign in button is enabled
+8. Verify ‘Forgot Your Password?’ links is displayed
+9. Click Sign in button
+10. Very ‘Welcome, username!’ message on top right
+11. Scroll down and click on Contact us
+12. Verify the page title
+13. Verify the Contact Us header, top message and phone numbers
+14. Verify Name and email inputs are auto-populated
+15. Enter Phone Number
+16. Enter text into What’s on your mind text area.
+17. Verify submit button is enabled and click it.
+18. Verify the success tooltip on top
+19. Log out
+magento.softwaretestingboard.commagento.softwaretestingboard.com
+Beaumont Summit Kit
+The smooth nylon shell around the Beaumont Summit Kit combats wind, reinforced with a cold-fighting brushed
+fleece layer. The jacket is reversible, giving you a new look for the return trek. Ample pocket space rounds out
+this hiker's paradise package.
+&bu
+magento.softwaretestingboard.commagento.softwaretestingboard.com
+Typhon Performance Fleece-lined Jacket
+Ironmen and couch warriors both reach for the Typhon Performance Fleece-lined Jacket.
+After all, no man can resist ultra-soft microfleece lining. Flatlock seams make it ideal for wearing over
+everything from tanks and tees to high-tech base layers.
+•
